@@ -1,0 +1,30 @@
+@media (max-width: 900px){
+    body{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .trending{
+        display: flex;
+        flex-direction: column;
+    }
+    .categorias{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new{
+        gap: 3rem;
+    }
+
+    .categorias .categoria .imagen{
+        max-width: 30%;
+        height: auto;
+        
+     }
+ 
+}
+
+
+
+ 

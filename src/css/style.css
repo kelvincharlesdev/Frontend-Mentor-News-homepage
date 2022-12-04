@@ -1,0 +1,181 @@
+html{
+    font-size: 62,5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "picture picture new"
+    "trending trending new"
+    "categories categories categories"
+    "footer footer footer"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    gap: 2.5rem;
+    max-width: 1440px;
+    padding: 5rem;
+    margin: 0 auto;
+   
+}
+
+.header{
+    grid-area: header;
+}
+
+.home{
+    grid-area: picture;
+}
+
+.trending{
+    grid-area: trending;
+    display: grid;
+    grid-template-areas: "tilte inf";
+    
+}
+.trending .title{
+    font-weight: 800;
+    font-size: 3rem;
+    max-width: 300px;
+}
+
+.trending .inf{
+ line-height: 1.6rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.trending .inf .btn{
+    background-color: var(--very-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.trending .inf .btn a{
+    color: var(--off-white);
+}
+
+.trending .inf .btn:hover{
+    background-color: var(--very-dark);
+}
+
+.new{
+    grid-area: new;
+    background-color: var(--very-dark);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.new h2{
+    color: var(--soft);
+    font-weight: 800;
+  
+}
+
+.new h3{
+    color: var(--off-white);
+    font-weight: 700;
+    transition: 0.3s ease-in-out; 
+}
+
+.new h3:hover{
+    color: var(--soft);
+}
+
+.new p{
+    color: var(--grayish);
+    font-size: 0.9rem;
+    
+}
+
+
+.categorias{
+    grid-area: categories;
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+
+}
+
+
+
+.categorias .categoria{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.categorias .categoria .imagen{
+    max-width: 50%;
+    height: auto;
+    display: flex;
+ }
+
+ .categorias .categoria .imagen img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.categorias .categoria .categoria-inf{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+.categorias .categoria h3{
+    color: var(--grayish);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.categorias .categoria h4{
+    color: var(--very-dark);
+    font-weight: 800;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.categorias .categoria h4:hover{
+    color: var(--very-soft);
+}
+
+.categorias .categoria p{
+    color: var(--grayish);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+   
+    
+}
+
+
+.attribution{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+  
+}
+
+
+.attribution a{
+    color: var(--very-soft);
+    transition: 0.3s ease-in-out;
+
+}
+
+.attribution a:hover{
+    color: var(--soft);
+}
